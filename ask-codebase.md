@@ -31,8 +31,8 @@ Before fetching, classify the question:
 
 Only fetch what the classification requires. Do not default to fetching both.
 
-- **Backend index (mx-instant-api):** `xxx`
-- **Frontend index (bappzaar):** `yyy`
+- **Backend index (mx-instant-api):** `https://docs.google.com/document/d/1PnH8GaCzobOvFMau9RnzxE_r44PKaReYCzeS77PuQEE/export?format=txt`
+- **Frontend index (bappzaar):** `https://docs.google.com/document/d/1TN3Y-A6RsDeCPvvCn-hcXgwYP-ugmWkHS91GreMFHmw/export?format=txt`
 
 These files are updated weekly after each release — always fetch fresh, do not rely on memory.
 
