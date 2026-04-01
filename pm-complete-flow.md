@@ -1,9 +1,8 @@
 ---
-name: pipeline
-description: "Run the full Noon Minutes product pipeline. Start from any stage — Brief, Designer, Design Review, Final PRD, or Engineering. Orchestrates all skills in sequence with handoff summaries and approval gates between stages."
+name: pm-complete-flow
+description: Run the full Noon Minutes product pipeline. Start from any stage — Brief, Designer, Design Review, Final PRD, or Engineering. Orchestrates all skills in sequence with handoff summaries and approval gates between stages.
 argument-hint: "[optional: starting stage or what you have ready]"
 ---
-
 # Noon Minutes — Product Pipeline Orchestrator
 
 ## Identity
@@ -42,7 +41,7 @@ Type the number.
 Based on the answer, determine the remaining stages:
 
 | Answer | Starting Stage | Default path forward |
-|---|---|---|
+| --- | --- | --- |
 | 1 | PRD Brief | Brief → Designer → Design Review → Final PRD → Engineer |
 | 2 | Designer | Designer → Design Review → Final PRD → Engineer |
 | 3 | Design Review | Design Review → Final PRD → Engineer |
@@ -91,7 +90,7 @@ Before invoking the skill, output this block so the skill has prior context:
 ### Then invoke the skill using the Skill tool:
 
 | Stage | Skill to invoke |
-|---|---|
+| --- | --- |
 | PRD Brief | `prd-brief` |
 | Designer | `designer` |
 | Design Review | `design-review` |
